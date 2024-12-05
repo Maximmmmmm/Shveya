@@ -11,7 +11,6 @@
 .header .left {
 	height: 100%; 
 	width: 35%;
-	border-right: 1px solid #E8DCD0; 
 	display: flex;
 	align-items: center; 
 	justify-content: center; 
