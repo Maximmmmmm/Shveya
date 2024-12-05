@@ -7,31 +7,70 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<!-- css loading -->
-	<link rel="stylesheet" href="{% static 'Main_page/css/home.css' %}">
-	<link rel="stylesheet" href="{% static 'Main_page/css/header.css' %}">
+	<link rel="stylesheet" href="{% static 'Main_page/home_css/home.css' %}">
+	<link rel="stylesheet" href="{% static 'Main_page/home_css/header.css' %}">
+	<link rel="stylesheet" href="{% static 'Main_page/home_css/infobox.css' %}">
+	<link rel="stylesheet" href="{% static 'Main_page/home_css/cardbox.css' %}">
+	<link rel="stylesheet" href="{% static 'Main_page/home_css/conbox.css' %}">
+	<link rel="stylesheet" href="{% static 'Main_page/home_css/basement.css' %}">
 </head>
 <body>
 	<div class="wrapper">
+
 		<header class="header">
-			<div class="header__container">
-				<div class="header__logo"><img src="{% static 'Main_page/images/logo.png' %}" alt="logo"></div>
-				<div class="header__menu menu">
-					<button type="button" class="menu__icon icon-menu"><span></span></button>
-					<nav class="menu__body">
-						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">Новини</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Навчальний центр</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Донат</a></li>
-							<div class="menu__lang">
-								<button>EN</button>
-								<div></div>
-								<button>UK</button>
-							</div>
-						</ul>
-					</nav>
+			<div class="left">
+				<div class="logo_shveya"><img src="{% static 'Main_page/images/logo.png' %}" alt="logo"></div>
+			</div>
+
+			<div class="right">
+				<nav class="menu">
+					<a>Новини</a>
+					<a href="{% url 'show_home' %}" class="{% if request.path == '/' %}active{% endif %}">Навчальний центр</a>
+					<a>Донат</a>
+					
+    		</nav>
+				
+				<div class="menulang">
+						<button>EN</button>
+						<div>|</div>
+						<button>UK</button>
 				</div>
 			</div>
 		</header>
+
+		<div class="infobox">
+			<div class="left">
+				<div class="icon_shveya"><img src="{% static 'Main_page/images/iconshveya.png' %}" alt="iconshveya"></div>
+			</div>
+			<div class="right">
+				<h1>Швейна рота</h1>
+				<h2>Волонтерський проєкт, який займається пошиттям 
+					адаптивного одягу для поранених 
+					захисників, захисниць України, а також цивільних, 
+					які постраждали внаслідок російської агресії. Наші 
+					зусилля спрямовані на забезпечення поранених якісним, 
+					комфортним і функціональним одягом, який допомагає 
+					зберегти гідність і полегшити реабілітацію на всіх 
+					етапах від евакуації до одужання.</h1>
+			</div>
+		</div>
+
+		<div class="cardbox">
+			
+		</div>
+
+		<div class="conbox">
+			
+		</div>
+
+		<div class="basement">
+			
+		</div>
+
+		
 	</div>
+
+	
+
 </body>
 </html>

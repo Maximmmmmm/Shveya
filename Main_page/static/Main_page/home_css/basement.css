@@ -1,0 +1,8 @@
+.basement {
+  background: #2e2e35;
+  height: 8%; 
+  width: 100%; 
+  position: relative;
+  z-index: 0;
+  display: flex; 
+}
