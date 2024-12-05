@@ -96,12 +96,16 @@ h6 {
 
 @font-face {
   font-family: 'intro';
-  src: url('{% static "fonts/intro.woff2" %}') format('woff2'),
-       url('{% static "fonts/intro.woff" %}') format('woff');
+  src: url('/static/fonts/intro.woff2') format('woff2'),
+       url('/static/fonts/intro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'ano';
-  src: url('{% static "fonts/anonymousprobold.woff2" %}') format('woff2'),
-       url('{% static "fonts/anonymousprobold.woff" %}') format('woff');
+  font-family: 'anonymousprobold';
+  src: url('/static/fonts/anonymousprobold.woff2') format('woff2'),
+       url('/static/fonts/anonymousprobold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }

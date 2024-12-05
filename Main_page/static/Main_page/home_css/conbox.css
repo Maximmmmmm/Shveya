@@ -1,8 +1,36 @@
 .conbox {
   background: #E8DCD0;
-  height: 32%; 
+  height: 36%; 
   width: 100%; 
   position: relative;
   z-index: 0;
+  display: flex;
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center; /* Вертикальное центрирование */
+}
+
+.conbox .left {
+  background-color: #E8DCD0;
+  height: 100%; 
+  width: 49.3%; 
+  padding-left: 14%;
+  padding-top: 3%;
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center; /* Вертикальное центрирование */
+}
+
+.conbox .column {
+  background-color: black;
+  width: 0.4%;
+  height: 80%;
+  border-radius: 10px;
+}
+
+.conbox .right {
+  height: 100%; 
+  width: 49.3%;
   display: flex; 
+  flex-direction: column; /* Располагает элементы в столбец */
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center; /* Вертикальное центрирование */
 }
