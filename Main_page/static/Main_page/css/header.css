@@ -1,0 +1,51 @@
+.header {
+	background: #2E2E35;
+	color: #E8DCD0;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	height: 90px;
+}
+.header__container {
+	max-width: 1100px;
+	padding: 0px 15px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+.header__logo {
+}
+.header__menu {
+}
+.menu {
+}
+.menu__icon {
+	display: none;
+}
+.icon-menu {
+}
+.menu__body {
+}
+.menu__list {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+.menu__item {
+}
+.menu__link {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 600;
+}
+.menu__lang {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.menu__lang div {
+	height: 20px;
+	width: 2px;
+	background-color: #E8DCD0;
+}
